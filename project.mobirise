@@ -1,0 +1,670 @@
+{
+  "settings": {
+    "currentPage": "malami-political.html",
+    "theme": {
+      "name": "securem4",
+      "title": "SecureM4",
+      "styling": {
+        "primaryColor": "#36187d",
+        "secondaryColor": "#ea2396",
+        "successColor": "#35b8fc",
+        "infoColor": "#47b5ed",
+        "warningColor": "#6c758f",
+        "dangerColor": "#36187d",
+        "mainFont": "Bellota Text",
+        "display1Font": "Bellota Text",
+        "display1Size": 4,
+        "display2Font": "Bellota Text",
+        "display2Size": 2.8,
+        "display5Font": "Bellota Text",
+        "display5Size": 1.7,
+        "display7Font": "Bellota Text",
+        "display7Size": 1.2,
+        "display4Font": "Bellota Text",
+        "display4Size": 1.1,
+        "isRoundedButtons": true,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "titlePreset": "Cyber Security",
+      "nameSelectPreset": "cyber-security",
+      "presetSourceTheme": "securem4",
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "name": "Achievements",
+    "versionFirst": "5.4.1",
+    "siteFonts": [
+      {
+        "css": "'Bellota Text', display",
+        "name": "Bellota Text",
+        "url": "https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i"
+      }
+    ],
+    "dppsSwitcher": true,
+    "spellingSwitch": true,
+    "site_lang": "en",
+    "uniqCompNum": 8,
+    "versionPublish": "5.4.1",
+    "imageResize": true,
+    "chatbutton": {},
+    "favicon": false,
+    "mbrsiteDomain": "eoicug6c2g",
+    "cssOptimize": false,
+    "lazyLoad": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "pwa-switcher": false,
+    "witsec-white-label": false,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Achivements | MyLeader",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".row": {
+              "align-items": "center"
+            },
+            "@media (max-width: 991px)": {
+              ".row": {
+                "flex-direction": "column-reverse"
+              },
+              ".image-wrapper": {
+                "margin-bottom": "2rem"
+              },
+              ".card-wrapper": {
+                "padding": "0 1rem"
+              }
+            },
+            "@media (min-width: 992px)": {
+              ".card-wrapper": {
+                "padding-right": "2rem"
+              }
+            },
+            ".image-wrapper img": {
+              "width": "100%",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "object-fit": "cover",
+              "border-radius": "3rem"
+            },
+            ".card-title": {
+              "color": "#36187d"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#6c758f"
+            }
+          },
+          "_name": "article06",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"article5\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"7\">\n        <input type=\"range\" name=\"imageWidth\" title=\"Image\" min=\"4\" max=\"8\" step=\"1\" value=\"6\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-lg\" mbr-class=\"{'offset-lg-1': fullWidth}\">\n                <div class=\"card-wrapper align-left\">\n                    <h6 class=\"card-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Achievements</b></h6>\n                    <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Lorem ipsum dolor sit amet, consectetur\n                            adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo eleifend tortor, quis\n                            sollicitudin mauris ipsum a elit.</b><br></p>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-lg btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Read More</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-{{imageWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"../_images/features/features3.jpg\" alt=\"Mobirise\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZ9GlrYsqJ",
+          "_anchor": "article06-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "malami-official.html": {
+      "settings": {
+        "title": "malami-official",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-text": {
+              "color": "#6c758f"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#6c758f"
+            },
+            ".mbr-section-title": {
+              "color": "#36187d"
+            }
+          },
+          "_name": "article02",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"content2\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"8\" value=\"6\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f2f3f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md align-left\">\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>Official Achievements</b></h5>\n                <h6 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-7\"><div><b style=\"font-size: 1.2rem;\">Attorney General of the Federation and Minister of Justice, Abubakar Malami San remains the cynosure of the President Muhammadu Buhari-led Federal Government.</b><br></div><div><b>Malami’s conspicuous postures, legal acumen and administrative dexterity in the discharge of his statutory responsibilities depict him as a workaholic and an achiever Minister who works relentless in ensuring the attainment of the cardinal objectives of the administration of President Muhammadu Buhari.</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div></h6>\n            </div>\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <p class=\"mbr-text align-left mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">In the year 2021, as always, Malami was preoccupied with public-interest national assignments and international engagements geared toward enhancing the fortunes of Nigeria.\n<br>Enumerated below are points of what could be considered as marvelous milestones recorded by the Office of the Attorney General of the Federation and Minister of Justice in the 2021.<br><br>- 𝘽𝙮 𝘿𝙧. 𝙐𝙢𝙖𝙧 𝙅𝙞𝙗𝙧𝙞𝙡𝙪 𝙂𝙬𝙖𝙣𝙙𝙪<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZadGjj0A1",
+          "_anchor": "article02-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".item": {
+              "position": "relative",
+              "display": "flex",
+              "padding-bottom": "2rem",
+              "&:last-child": {
+                ".icon-box": {
+                  "&:before": {
+                    "display": "none"
+                  }
+                }
+              },
+              "& when not (@showArrows)": {
+                "align-items": "flex-start"
+              },
+              "& when (@showArrows)": {
+                "&::before": {
+                  "content": "\"\"",
+                  "width": "2px",
+                  "height": "100%",
+                  "left": "40px",
+                  "position": "absolute",
+                  "top": "0",
+                  "background": "@lineColor",
+                  "transform": "translate(-50%, 0)",
+                  "@media (max-width: 767px)": {}
+                }
+              }
+            },
+            ".last": {
+              "&:before": {
+                "display": "none"
+              }
+            },
+            ".icon-box": {
+              "width": "80px",
+              "min-width": "80px",
+              "height": "80px",
+              "border-radius": "50%",
+              "background": "@stepColor",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "margin-right": "2rem",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "position": "relative",
+              "@media (max-width: 768px)": {
+                "margin-right": "1rem"
+              }
+            },
+            "span": {
+              "font-size": "2rem",
+              "@media (max-width: 991px)": {
+                ".card": {
+                  "margin-bottom": "2rem"
+                },
+                ".card-wrapper": {
+                  "margin-bottom": "2rem"
+                },
+                ".icon-box": {
+                  "& when (@showArrows)": {
+                    "&::before": {
+                      "top": "141%",
+                      "& when (@fullWidth)": {
+                        "top": "123%"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".icon-box": {
+                "& when (@showArrows)": {
+                  "&::before": {
+                    "top": "114%"
+                  }
+                }
+              }
+            },
+            "SPAN": {
+              "color": "#36187d"
+            },
+            ".icon-text": {
+              "color": "#36187d"
+            },
+            ".icon-title": {
+              "color": "#36187d"
+            },
+            ".icon-subtitle": {
+              "color": "#36187d"
+            },
+            ".main-title": {
+              "color": "#36187d"
+            }
+          },
+          "_name": "numbers01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"numbers1\" group=\"Numbers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"7\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Steps\" name=\"steps\">\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Step</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\">\n        <input type=\"checkbox\" title=\"Sub Title\" name=\"showCardsubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showCardText\" checked>\n        <input type=\"color\" name=\"stepColor\" title=\"Step Color\" value=\"#f2f3f7\">\n        <input type=\"checkbox\" title=\"Line\" name=\"showArrows\" checked>\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#dae2ec\" condition=\"showArrows\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\" mbr-if=\"showTitle || showText || showButton\">\n                <div class=\"card-wrapper pb-4\">\n                    <div class=\"card-box align-left\">\n                        <h4 class=\"main-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".main-title\"><b>MARVELOUS ACHIEVEMENTS 2021</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Mobirise is a free offline app for Windows and Mac to easily create small/medium websites,\n                            landing pages, online resumes and portfolios. 2500+ beautiful website blocks, templates and\n                            themes help you to start easily.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"item mbr-flex\" mbr-class=\"{'last': steps == 1}\">\n                    <div class=\"icon-box\">\n                        <span mbr-text class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">1</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2019</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>Smart Home Security</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>𝟏. 𝐏𝐫𝐨𝐬𝐜𝐫𝐢𝐩𝐭𝐢𝐨𝐧 𝐨𝐟 𝐁𝐚𝐧𝐝𝐢𝐭𝐫𝐲\n</b><div><b>As a demonstration of commitment to end banditry and other forms of associated insecurity in the country, the Office of the Attorney General of the Federation and Minister of Justice filed an application for the proscription of bandits as Terrorists.\n</b></div><div><b>The proscription shows the determination of the Federal Government to deal ruthlessly with the bandits and to do things in accordance with the rule of law.\n</b></div><div><b>𝟐. 𝐇𝐚𝐥𝐭𝐢𝐧𝐠 𝐌𝐨𝐧𝐞𝐲 𝐋𝐚𝐮𝐧𝐝𝐞𝐫𝐢𝐧𝐠, 𝐓𝐞𝐫𝐫𝐨𝐫𝐢𝐬𝐦 𝐚𝐧𝐝 𝐈𝐥𝐥𝐢𝐜𝐢𝐭 𝐅𝐢𝐧𝐚𝐧𝐜𝐢𝐧𝐠\n</b></div><div><b>In a bid to address the challenges of money laundering and terrorism financing, the office of the Attorney General of the Federation and Minister of Justice Abubakar Malami, SAN facilitated the move by Federal Government of Nigeria has indicated willingness to join membership of the global Financial Action Task Force (FATF) on money laundering and terrorist financing watchdog.\n</b></div><div><b>The FATF monitors 39 member countries to ensure fully and effective implementation of FATF Standards thereby holding nations that do not comply accountable.\n</b></div><div><b>𝟑. 𝐑𝐞𝐭𝐮𝐫𝐧 𝐨𝐟 𝐋𝐨𝐨𝐭𝐬 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐞𝐝 𝐭𝐨 𝐭𝐡𝐞 𝐟𝐚𝐦𝐢𝐥𝐲 𝐨𝐟 𝐉𝐚𝐦𝐞𝐬 𝐈𝐛𝐨𝐫𝐢\n</b></div><div><b>Following the signing of Memorandum of Understanding for the repatriation of the Ibori loot on behalf of the Federal Government of Nigeria by Malami and the British High Commissioner, Catriona Laing, the sum of 4.3million Pound connected to the family of James Ibori were returned to the Federal Government on 10th May, 2021.\n</b></div><div><b>The development, according to Malami, was a demonstration of the recognition of reputation Nigeria earns through records of management of recovered stolen Nigerian stolen in the execution of public oriented projects.\n</b></div><div><b>𝟒. 𝐈𝐝𝐞𝐧𝐭𝐢𝐟𝐲𝐢𝐧𝐠, 𝐁𝐥𝐨𝐜𝐤𝐢𝐧𝐠, 𝐏𝐫𝐨𝐬𝐞𝐜𝐮𝐭𝐢𝐧𝐠 𝐚𝐧𝐝 𝐇𝐚𝐥𝐭𝐢𝐧𝐠 𝐁𝐨𝐤𝐨 𝐇𝐚𝐫𝐚𝐦 𝐅𝐢𝐧𝐚𝐧𝐜𝐢𝐞𝐫𝐬\n</b></div><div><b>In addition to the fight against corruption, crushing banditry and combating terrorism, the President Muhammadu Buhari’s Administration is also determined and committed to arraign and prosecute anyone found wanting or connected to the sponsorship of Boko Haram Terrorists.\n</b></div><div><b>On this note, the Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN worked assiduously and carried out a thorough and comprehensive investigation to prosecute all the financiers of Boko Haram.\n</b></div><div><b>“As per as terrorism funding and financing is concerned, we have succeeded in identifying those that are allegedly responsible for funding same and we are blocking the leakages associated with funding while embarking on aggressive investigation that is indeed impacting positively in terms of the fight against terrorism” Malami informed journalist during the 76th session of the United Nations General Assembly, in September, 2021.\n</b></div><div><b>𝟓. 𝐑𝐞𝐬𝐮𝐦𝐩𝐭𝐢𝐨𝐧 𝐨𝐟 𝐍𝐧𝐚𝐦𝐝𝐢 𝐊𝐚𝐧𝐮’𝐬 𝐭𝐫𝐢𝐚L\n</b></div><div><b>Through combined efforts of stakeholders the leader of the proscribed terrorists Indigenous People of Biafra (IPOB), Nnamdi Kanu, was re-arrested and brought back to Nigeria in June 2021.\n</b></div><div><b>Kanu was brought back to face his trial. Mr Kanu and his co-defendant were facing treasonable felony charges at the Federal High Court in Abuja when fled the country in September 2017.\n</b></div><div><b>The resumption of the trail has been applauded as another remarkable milestone recorded in the year 2021. The Minister was also informed Nigerians of the atrocities committed by the IPOB when they unleashed mayhem in the country.\n</b></div><div><b>𝟔. 𝐄𝐱𝐩𝐨𝐬𝐢𝐧𝐠 𝐭𝐡𝐞 𝐒𝐩𝐨𝐧𝐬𝐨𝐫𝐬 𝐨𝐟 𝐒𝐞𝐩𝐚𝐫𝐚𝐭𝐢𝐬𝐭𝐬 𝐦𝐨𝐯𝐞𝐦𝐞𝐧𝐭\n</b></div><div><b>At a Press Conference in October, 2021, the Attorney General of the Federation and Minister of Justice Abubakar Malami,SAN revealed that an investigation has discovered a Federal lawmaker and other major sponsor of Yoruba Nation agitator, Sunday Igboho.\n</b></div><div><b>Malami said the investigation unravelled how Igboho got monies from 43 bank accounts, across nine banks. The report shows the link between the separatists’ agitators and terrorism across the country.\n</b></div><div><b>𝟕. 𝐀𝐝𝐯𝐚𝐧𝐜𝐢𝐧𝐠 𝐈𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐂𝐨𝐨𝐩𝐞𝐫𝐚𝐭𝐢𝐨𝐧\n</b></div><div><b>In the effort to bring lasting peace an at the Lake Chad Region, Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN, said Federal Government of Nigeria has vowed to partner in the collaborative efforts to see to an end the multidimensional crises facing the Lake Chad Basin States.\n</b></div><div><b>The Minister has been engaging in international cooperation assignments connected to the United Kingdom, United States, Egypt, Cameroon, China, Gambia among others.\n</b></div><div><b>𝟖. 𝐆𝐥𝐨𝐛𝐚𝐥 𝐒𝐡𝐨𝐰𝐜𝐚𝐬𝐞 𝐨𝐟 𝐍𝐢𝐠𝐞𝐫𝐢𝐚’𝐬 𝐀𝐧𝐭𝐢-𝐂𝐨𝐫𝐫𝐮𝐩𝐭𝐢𝐨𝐧 𝐂𝐫𝐮𝐬𝐚𝐝𝐞\n</b></div><div><b>Speaking at the annual public lecture in New York organized by the Centre for Media and Peace Initiative, New York, United States of America, Malai explained that “various steps have been taken (by the Buhari-led Federal Government) in terms of legislatives frameworks, establishment of institutions and policy measures targeted at combatting corruption, regional corporation and ensuring good governance for the benefit of citizens”.\n</b></div><div><b>According to him, the outstanding successes recorded in the fight against corruption, especially in the international asset recovery could be a template for other African countries in the fight against corruption.\n</b></div><div><b>𝟗. 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐢𝐧𝐠 𝐑𝐞𝐟𝐨𝐫𝐦𝐬 𝐢𝐧 𝐃𝐞𝐟𝐞𝐧𝐜𝐞, 𝐀𝐅𝐍\n</b></div><div><b>In an effort to ensure a better Nigeria, the Attorney General of the Federation and Minister of Justice Abubakar Malami, SAN pledged enormous support in providing the legal backing for the immediate implementation of reforms strategy for national security architecture.\n</b></div><div><b>Malami made this known as he received members of the Presidential Implementation Advisory Committee for the Implementation of the Recommendations of the Reform Committee on Ministry of Defence and Armed Forces of Nigeria, adding that the review of the defense and security architecture is crucial and a necessity considering the heightened level of insurgency and other internal and external threats.\n</b></div><div><b>𝟏𝟎. 𝐂𝐨𝐦𝐦𝐢𝐭𝐦𝐞𝐧𝐭 𝐭𝐨 𝐞𝐧𝐝 𝐈𝐦𝐩𝐮𝐧𝐢𝐭𝐲, 𝐂𝐫𝐢𝐦𝐞𝐬 𝐀𝐠𝐚𝐢𝐧𝐬𝐭 𝐉𝐨𝐮𝐫𝐧𝐚𝐥𝐢𝐬𝐭𝐬\n</b></div><div><b>Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN, has reassures the Federal Government’s unending support, dedication and commitment to end impunity for crimes against Journalists.\n</b></div><div><b>Malami gave the assurance in his keynote address at “Policy Dialogue on Protection of Journalists in commemoration of the 2021 International Day to end impunity for crimes against Journalists in Nigeria”, organized by Federal Ministry of Justice with the support from the Managing Conflict in Nigeria (MCN) program of the British Council Tuesday 2nd November, 2021 held in Abuja.\n</b></div><div><b>𝟏𝟏 𝐔𝐧𝐰𝐚𝐯𝐞𝐫𝐢𝐧𝐠 𝐒𝐭𝐚𝐧𝐜𝐞 𝐭𝐨 𝐑𝐞𝐜𝐨𝐯𝐞𝐫 𝐋𝐨𝐨𝐭 𝐒𝐭𝐚𝐬𝐡𝐞𝐝 𝐀𝐛𝐫𝐨𝐚𝐝\n</b></div><div><b>Malami pointed out that the Federal Government had identified at least many stolen funds which the government was determined and committed to recover from different countries of the world.\n</b></div><div><b>“We are looking to recover further about USD2 billion among others, but then, that does not mean to say that no other associated assets are being pursued in other countries of the world, including Ireland and other countries,” he said.\n</b></div><div><b>𝟏𝟐. 𝐐𝐮𝐚𝐥𝐢𝐭𝐚𝐭𝐢𝐯𝐞 𝐋𝐞𝐠𝐚𝐥 𝐎𝐩𝐢𝐧𝐢𝐨𝐧𝐬\n</b></div><div><b>One of the major responsibilities of the Attorney General of the Federation and Minister of justice consist in counseling the State in all legal matters. It has the major role of promoting and enhancing justice for all, the rule of law and good governance.\n</b></div><div><b>The year 2021 was a remarkable year in the justice sector in the country. Malami gave sound and qualitative legal opinions to President Muhammadu Buhari, especially in the areas economy, politics, health sector, security, signing of mutual agreements, memoranda of understanding and international cooperation. But for some of his sound legal views on issues, especially, on sensitive matters, the country may have found itself in chaos.\n</b></div><div><b>𝟏𝟑. 𝐕𝐢𝐫𝐭𝐮𝐚𝐥 𝐂𝐨𝐮𝐫𝐭 𝐒𝐢𝐭𝐢𝐧𝐠 𝐅𝐚𝐜𝐢𝐥𝐢𝐭𝐢𝐞𝐬\n</b></div><div><b>The Covid 19 pandemic forced many countries around the world to adopt a new way of doing things which were never envisaged before. One of them is the introduction of virtual court sitting in the country through collaborative efforts with relevant local and international stakeholders.\n</b></div><div><b>Virtual Court Sitting Facilities, the first of its kind was commissioned in Correctional Centre in Kuje, Abuja, last year by Malami.\n</b></div><div><b>According to Malami, the deployment of a virtual court sitting technology in correctional facilities was aimed at ensuring speedy dispensation of Justice and decongestion of custodial centres in the country.\n</b></div><div><b>“It would also eliminate the issue of difficulties in conveying the inmates to court and would further ensure the safety and security of the inmates and law enforcement officers. We are no longer constrained by mobility, space and time in the justice delivery on account of accommodation of the virtual court sitting facilities and deployment of incidental technology,” Malami said.\n</b></div><div><b>𝟏𝟒. 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝐭𝐨 𝐄𝐧𝐝 𝐂𝐫𝐢𝐬𝐞𝐬 𝐚𝐭 𝐋𝐚𝐤𝐞 𝐂𝐡𝐚𝐝 𝐑𝐞𝐠𝐢𝐨𝐧\n</b></div><div><b>Another milestone achievement lauded by Nigerians was the determination of Malami to support and address crises at Lake Chad Region as Nigeria vowed to partner in the collaborative efforts to see to the end of the multidimensional crises facing the Lake Chad Basin States.\n</b></div><div><b>While receiving a delegation of the United Nations and Lake Chad Basin Commission who were in Nigeria for a high-level political advocacy visit, Malami noted with dismay that judging from the security challenges presently confronting Nigeria and some of the Lake Chad Basin States, several lives have been lost, including the lives of soldiers and millions of dollars of properties have been either vandalised or completely destroyed.\n</b></div><div><b>𝟏𝟓. 𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐢𝐧 𝐎𝐩𝐞𝐧 𝐆𝐨𝐯𝐞𝐫𝐧𝐦𝐞𝐧𝐭 𝐏𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩\n</b></div><div><b>The level of transparency in the sector made the administration of President Mohammadu Buhari top global ranking in Open Government Partnership, OGP.\n</b></div><div><b>Nigeria won the global award announced in Seoul, South Korea, at the opening ceremony of the Summit of OGP member countries. Nigeria beat other countries in Africa and the Middle East that are implementing the OGP.\n</b></div><div><b>The review tracked and assessed milestones achieved by the Nigerian government in setting up a Beneficial Ownership registry to end anonymous companies in the country, a statement by the Nigeria Extractive Industries Transparency Initiative (NEITI) has said.\n</b></div><div><b>The Office of the Attorney General of the Federation coordinated the activities of Open Government Partnership.\n</b></div><div><b>𝟏𝟔. 𝐁𝐮𝐢𝐥𝐝𝐢𝐧𝐠 𝐆𝐥𝐨𝐛𝐚𝐥 𝐂𝐨𝐧𝐬𝐞𝐧𝐬𝐮𝐬 𝐨𝐧 𝐀𝐬𝐬𝐞𝐭𝐬 𝐑𝐞𝐜𝐨𝐯𝐞𝐫𝐲\n</b></div><div><b>The government, through the office of the Attorney General of the Federation and Minister of Justice, Abubakar Malami,SAN was able to build Global Consensus on Assets Recovery.\n</b></div><div><b>Malami, during the ninth session of the Conference of States Parties to the United Nations Convention Against Corruption (UNCAC), that took place in Sharm El Sheik, Egypt, last year, said with support from the 19 countries across different continets of the globe, Nigeria got support in its submitted draft resolution entitled “Enhancing access to and the use of Beneficial Ownership Information to facilitate the identification, recovery and return of assets “, to further highlight the importance of beneficial ownership transparency.\n</b></div><div><b>Malami said significant progress has been recorded in the efforts to combat corruption in Nigeria.\n</b></div><div><b>”We have continued to make significant progress in our efforts to prevent and combat corruption, block leakages and recover our stolen assets” Malami said.\n</b></div><div><b>𝟏𝟕. 𝐓𝐫𝐞𝐚𝐭𝐞𝐝 𝟏𝟖,𝟑𝟖𝟖 𝐌𝐚𝐢𝐥𝐬\n</b></div><div><b>As of a week to 2022, being a workaholic Malami received and treated 18,388 mails last year. The total sum of mails received from Government Agencies from January to December 2021 amount to 5,719, while 5,031 mails were received from Law Firms, 6,478 mails from Private Individuals and 1,160 from Civil Society Organizations.\n</b></div><div><b>A point of interest associated with the volumes of the mails treated is the fact that in addition to the quantum, enormity of the mails received and treated, the opinions, decisions and actions of the Office of the Attorney General of the Federation and Minister of Justice arising from the mails have translated into major policy impact on the position of Federal Government relating to Justice sector reform, security, economy and the fight against corruption, among others, in the country.\n</b></div><div><b>𝟏𝟖. 𝐌𝐚𝐥𝐚𝐦𝐢 𝐫𝐞𝐜𝐞𝐢𝐯𝐞𝐬 𝟕𝟗 𝐇𝐨𝐧𝐨𝐮𝐫𝐬 𝐚𝐧𝐝 𝐀𝐰𝐚𝐫𝐝𝐬\n</b></div><div><b>The reward for hardworking could translate into honours, awards, commendations and recognitions. In 2021 alone, no fewer than 79 organizations and corporate bodies conferred award of honour for patriotic service, humanitarian intervention and nation building to Malami.\n</b></div><div><b>The nominations for the awards and honours received are a testimony to Malami’s selflessness and relentless commitment to public interest, rule of law and dispassionate approach to dispensation and administration of justice in the country.\n</b></div><div><b>The organizations comprised of national and international institutions from governmental, non-governmental organizations, anti-corruption and forensic investigation bodies, professional associations, student unions, media-based groups and traditional institutions.\n</b></div><div><b>In their separate letters, the organizations said they consider Malami for his landmark achievements and successes recorded in carrying out national assignments especially the fight against corruption.\n</b></div><div><b>𝟏𝟗. 𝐄𝐧𝐬𝐮𝐫𝐢𝐧𝐠 𝐍𝐢𝐠𝐞𝐫𝐢𝐚’𝐬 𝐏𝐮𝐛𝐥𝐢𝐜 𝐈𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐏𝐫𝐞𝐯𝐚𝐢𝐥𝐬\n</b></div><div><b>Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN played very crucial roles in protecting Nigeria’s public interest. Many governmental institutions attested to the inspiring strive of Malami in ensuring that Nigeria’s public interest is always protected in all transactions. This was described as a demonstration of realization of the essence of Governance.\n</b></div><div><b>Also in this regards was the inauguration of the Committee to checkmate illegally refined petroleum products recovered around the creeks of Niger Delta.\n</b></div><div><b>𝟐𝟎. 𝐂𝐡𝐚𝐦𝐩𝐢𝐨𝐧𝐢𝐧𝐠 𝐉𝐮𝐬𝐭𝐢𝐜𝐞 𝐟𝐨𝐫 𝐂𝐡𝐢𝐥𝐝𝐫𝐞𝐧 𝐚𝐧𝐝 𝐕𝐮𝐥𝐧𝐞𝐫𝐚𝐛𝐥𝐞𝐬\n</b></div><div><b>In addition to the fact that Malami worked assiduously to address the issues of Sex and Gender Based Violence, another remarkable Milestone was the inauguration `Justice for Children Coordination Forum committee’.\n</b></div><div><b>While maintains that the Federal Government remains dedicated to improve children’s access to child-friendly justice system, Malami said through age and gender-sensitive juvenile justice mechanisms and alternatives to detention for children on the move and vulnerable children, the Nigeria child would benefit from the child-friendly justice sector. Still many steps were taken by the Office of the Attorney General of the Federation and Minister of Justice to address the issues juveniles in the Nigerian Correctional Centres.\n</b></div><div><b>From the above it is evidently clear that the year 2021 was an eventful one, especially in the Office of the Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN.\n</b></div><div><b>Malami proved to have judiciously utilized the year by being patriotically committed to marvelous and remarkable activities in a bid to enhance nation building and better fortune of our dear nation.</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b> \n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b> \n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b> \n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b> \n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b> \n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 1\" mbr-class=\"{'last': steps == 2}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">2</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2020</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>Cyber Security</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>20 MAJOR ACHIEVEMENTS OF MALAMI\n</b><div>Characterized by COVID-19 pandemic and subsequent lockdown, the year 2020 recorded low-key operations of many governmental, commercial and social activities.\n</div><div>Nevertheless, throughout the year, the Office of the Attorney General of the Federation (AGF) and Minister of Justice, Abubakar Malami, SAN had been actively engaged and pre-occupied with a lot of public-oriented national engagements.\n</div><div>Far from any ranking, preference or chronological chronicling of antecedents, below are some of what might be considered as major achievements recorded by the Federal Ministry of Justice, Office of the Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN in the year 2020 despite the lockdown</div><br><br><div><b>1. REPATRIATION OF OVER $300M LOOTED FUNDS\n</b></div><div>In January, 2020 Nigeria’s Federal Executive Council approved the memo for the repatriation of looted funds of over $300m from the United States and Island of Jersey. The task was assigned to the AGF and Minister of Justice, Abubakar Malami, SAN.\n</div><div>The Office of the AGF assiduously worked and ensured the repatriation of three hundred and eleven million, seven hundred and ninety-seven thousand, eight hundred and sixty-six point one-one dollars ($311,797,866.11) of the Abacha loot from the United States and the Bailiwick of Jersey.\n</div><div>Already, the government of Nigeria has committed that the assets will support and assist in expediting the construction of three major infrastructure projects across Nigeria, namely: The Lagos – Ibadan Expressway, Abuja – Kano Trunk Road, and the Second Niger Bridge.\n</div><div>The Federal Government has already approved the engagement of Civil Society Organization for to monitor the implementation of the application of the recovered assets. This is in line with the Open Government Partnership, UNCAC and 2020 Trilateral Agreement with Nigeria, United State of America and Bailiwick of Jersey.\n</div><div><br></div><br><div><b>2. SECURING VICTORY FOR NIGERIA AGAINST P&amp;ID\n</b></div><div>The Office of the Attorney-General of the Federation and Minister of Justice recorded the following successes, relating to the lingering imbroglio between the Federal Government and Process and Industrial Development Limited:\n</div><div>Securing an order for stay of execution of the arbitral award.\n</div><div>Challenging and changing the order for cash deposit of $200m to bank guarantee.\n</div><div>Success was equally recorded for having an order for the extension of time to challenge award and agreement.\n</div><div>Nigeria was successful as the court awarded payment of legal cost of €1.5m in favour of the country against P&amp;ID.\n</div><div>Award of payment of €70,000 to Nigeria as further legal cost relating to the issue.\n</div><div>Nigeria obtained multiple positive rulings to obtain information from banks abroad which helped in establishing fraud.\n</div><div><br></div><br><div><b>3. SECURING VICTORY FOR NIGERIA AGAINST INTER OCEAN OIL\n</b></div><div>Through the dogged determination of Nigerian legal team lead by the Attorney General of the Federation and Minister of Justice, Nigeria got relieved of $1.5b liability and gains $660,000 arbitration cost in the dispute with Interocean Oil Company.\n</div><div>The US-Based International Centre for Settlement of Investment Dispute headed by Professor William Park ordered InterOcean to pay the Federal Government of Nigeria Six-hundred and sixty thousand one hundred and twenty nine United State Dollars and eighty seven cents (USD 660,129.87) as reimbursement of its share of the arbitration costs incurred in the proceedings.\n</div><div>The Tribunal also absolves the Federal Government of Nigeria from any liability maintaining that Nigeria did not breach any of its obligations in the contract agreement with Interocean Development Company and Interocean Oil Exploration Company.\n</div><div><br></div><br><div><b>4. PROPOSING POST COVID-19 JUSTICE SYSTEM PLANS\n</b></div><div>The Nigerian Justice Sector is obviously not immuned from the effects of the pandemic. The necessity to prevent the spread of COVID-19 virus has led to, among other things, a nationwide closure of court rooms (save for certain exceptions).\n</div><div>Hence, the office of the AGF saw the urgent need for paradigm-shift to adjust the judicial process to make for recovery of lost grounds occasioned by the lockdown.\n</div><div>&nbsp;One major lesson from COVID-19 is that the Nigerian Justice Sector must seriously leverage technology in the improvement of its capacity to facilitate fair and speedy administration of justice.\n</div><div><br></div><br><div><b>5. ASSETS RECOVERY AND MANAGEMENT COMMITTEE</b></div><div>Acting in compliance with the extant laws including the provisions Economic and Financial Crimes Commission (EFCC) Establishment Act 2004, the Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN set up and inaugurated Inter-Ministerial Asset Disposal Committee. The Committee was given six months to discharge its mandates.</div><br><div>\n</div><div><b>6. MOVES TOWARDS HAVING NATIONAL ARBITRATION POLICY COMMITTEE\n</b></div><div>Malami, inaugurated members of the National Arbitration Policy Committee charging them to come out with a comprehensive policy that will, among other things, ensure that domestic transactions originating and terminating in Nigeria are arbitrated in the country.</div><br><div>\n</div><div><b>7. ESTABLISHMENT OF NATIONAL DEPOSITORY OF TREATIES\n</b></div><div>The Office of the AGF also established an electronic National Depository of Treaties that will serve as the depository of all treaties entered into between the Government of the Federation and any other country of any Ministry, Agency or Department. This is in line with Section 4 of the Treaties (Making Procedure, Etc.) Act Cap. T20 Laws of the Federation (LFN) 2004, which domiciled the National Depository of Treaties in the Federal Ministry of Justice.\n</div><div><br></div><br><div><b>8. EXECUTIVE ORDERS\n</b></div><div>Attorney-General of the Federation and Minister of Justice, Abubakar Malami, SAN saw to the signing of Presidential Executive Orders which he said aimed at complimenting the existing legislations and ensure inter-agency coordination in the process of implementation.\n</div><div>Facilitated the signing of Executive Order No.0010 for the implementation of Financial Autonomy for State Judiciary and State Houses of Assembly aimed at reinforcing compliance.\n</div><div>Also signed into law by the President was the Executive Order No. 8 of 2008, on Voluntary Offshore Assets Regularization Scheme (VOARS).\n</div><div>Speaking on Executive Order 10 on the Autonomy of State Legislature and Judiciary, Malami pointed out that Executive Orders were for ensuring constitutional compliance, complementing existing legislations, ensuring and enhancing operation, enforcement and application of the provisions as well as providing necessary supervision required for the enforcement.</div><br><div>\n</div><div><b>9. PROSECUTIONS OF CRIMINALS/FRAUDSTERS\n</b></div><div>The office of the Attorney General of the Federation and Minister of Justice recorded tremendous breakthrough in securing conviction, under the new anti-piracy legislation at the Federal High Court siting in Port Harcourt.\n</div><div>Within the year, the Office has successfully prosecuted and secured 3 high profiled convictions under the Terrorism Prevention Act before the Federal High Court sitting in Maiduguri.\n</div><div>It is on the record that through the instrumentality of the Mutual Legal Assistance Treaty, the Attorney General of the Federation and Minister of Justice personally led the prosecution of suspected international fraudsters at the Federal High Court, Abuja.\n</div><div>The suspects were allegedly involved in frauds running into millions of Euros on the pretext of providing Covid 19 Personal Protection Equipment to Germany and Netherlands.\n</div><div><br></div><br><div><b>10. PROSECUTIONS OF CRIMINALS/FRAUDSTERS\n</b></div><div>The Office of the Attorney-General of the Federation and Minister of Justice saw to the inauguration of an Inter-Ministerial Gender Based Violence Management Committee. The Office is supervising the review of all the existing laws, providing a comprehensive and appropriates support services to ensure that victims and survivors of sexual offences are not subjected to further stigmatization and trauma among others.\n</div><div><br></div><br><div><b>11. CHAIRING THE 78TH SESSION OF UNIDROIT\n</b></div><div>As the Chairman of the 78th Session of the International Institute for the Unification of Private Laws (UNIDROIT General Assembly, Rome), Attorney General of the Federation and Minister of Justice Abubakar Malami said during his tenure significant progress was made in respect of substantive projects and institutional improvements despite COVID-19 pandemic situation.\n</div><div>He said remarkable progress has been recorded in the implementation of the 2019 adopted Protocol to the Cape Town Convention on matters specific to Mining, Agricultural and Construction (MAC) Equipment.\n</div><div><br></div><br><div><b>12. CHAMPIONING THE ANTI-CORRUPTION CRUSADE\n</b></div><div>No fewer than twenty-five civil society organizations have expressed appreciation over the Attorney General of the Federation and Minister of Justice, Abubakar Malami’s efforts that culminated to the successes recorded in the anti-corruption crusade of the President Muhamadu Buhari’s Administration.\n</div><div><br></div><br><div><b>13. INITIATING REFORMATIONS OF THE NIGERIAN LEGAL SYSTEM\n</b></div><div>Attorney-General of the Federation and Minister of Justice, Abubakar Malami, SAN said the Federal Government is working round the clock to ensure that Nigerian legal system reflects nation’s existence in view of dynamism and contemporary realities.\n</div><div>“Generally speaking, we are not only changing/amending the obsolete laws, but coming up with new ones that are dynamic, that can stand the taste of time and that factor in dynamics associated with developments in technology and otherwise. We will ensure that all laws that deserve to be reviewed are reviewed”.\n</div><div>It may be recalled on September 10th, 2020 the Minister inaugurated members of the 9th Commission of the Nigerian Law Reform urging them to be guided by the rules and regulations as provided by the Section 2 &amp; 8 (1) of the Act.\n</div><div>The Minister asked them to ensure that all the rules and regulations relating to management of the human, material and financial resources of the Commission are adhered to in accordance to the objectives of the Federal Government, as contained in Section 8(1) (c) of the Act.\n</div><div><br></div><br><div><b>14. CONTRIBUTING TOWARDS DECONGESTION OF CORRECTIONAL CENTRES\n</b></div><div>As part of measures to decongest the Custodial Centres nationwide in the wake of the COVID-19 pandemic and the dangers posed to the centres, the Committee in collaboration with the Presidential Advisory Committee on Prerogative of Mercy, Federal Ministry of Justice, Ministry of Interior, State Executives and other relevant stakeholders, have been able to release over 7000 inmates. It is however, noteworthy that the releases were carried out in line with specific guidelines approved by Mr. President in view of national security and public interest.\n</div><div>15. TREATING 13,772 MAILS\n</div><div>Attorney General of the Federation and Minister of Justice, Abubakar Malami, SAN received and treated twelve thousand eight hundred and forty three mails received from Thursday 2nd January, to Friday 18th December, 2020.\n</div><div>The break down shows that the Minister received and treated a total of four thousand six hundred and seventy nine mails from Government agencies, while five thousand two hundred and eighty one mails were received from law firms as seven hundred and fifty six civil society organization sent in their letters while the remaining three thousand and fifty six were received from individuals.\n</div><div><br></div><br><div><b>16. FACILITATING THE DRAFTING AND SIGNING OF SENTENCING GUIDELINES\n</b></div><div>Attorney-General of the Federation and Minister of Justice, Abubakar Malami, SAN said the Consolidated Federal Capital Territory Courts Sentencing Guidelines and Practice which was signed by the Chief Judge of the FCT, as a product of collaboration efforts in Correctional Centres reform programs, will accelerate decongestion of Correctional Centres nationwide.\n</div><div><br></div><br><div><b>17. MALAMI SERVES AS MEMBER PRESIDENTIAL POWER INITIATIVE\n</b></div><div>President Muhammadu Buhari of the Federal Republic of Nigeria has again appointed the Attorney-General of the Federation and Minister of Justice, Abubakar Malami, SAN as a member Special Purpose Vehicle (SPV) for Presidential Power Initiate.\n</div><div><br></div><br><div><b>18. ESTABLISHMENT OF CENTRAL DATABASE FOR RECOVERED ASSETS\n</b></div><div>In compliance with Section 3 of the Assets Tracing, Recovery and Management Regulations (2019), the Attorney General of the Federation and Minister of Justice, Abubakar Malami,SAN formally launched the Central Database on Recovered Assets.  Also introduced was the Central Criminal Justice Information System under Pillar 1 of the provisions of the National Anti-Corruption Strategy (2017-2021).\n</div><div><br></div><br><div><b>19. RECEIVED INTERNATIONAL ORGANIZATION EULOGIZING VERDICTS\n</b></div><div>There have been several positive reports about Nigeria’s justice system. The Prosecutor of the International Criminal Courte, Hague, Fatou Bensouda says “I have repeatedly stressed my aspiration for the ability of the Nigerian judicial system to address these alleged crimes…. We have seen some efforts made by the prosecuting authorities in Nigeria to hold members of Boko Haram to account in recent years, primarily against low-level captured fighters for membership in a terrorist organization”.\n</div><div>The 2020 Report of the Committee to Protect Journalists says Nigeria no longer among countries where crimes against journalists go with impunity. Nigeria is the only that gets out of the list of the country where crimes against journalists go with impunity.\n</div><div>The report of a survey conducted by the Socio-Economic Right and Accountability Project (SERAP) tagged “Nigeria: Anti-Corruption Social Norms Report 2019” “Breaking-down the statistic, the report shows that 56.7 per cent of Nigerians surveyed responded positively that they are optimistic the Federal Government of Nigeria is capable of reducing or ending corruption in the country which is a clear indicator of the confidence Nigerians have in the Federal Government’s anti-corruption fight.\n</div><div><br></div><br><div><b>20. PROPOSED LAWS DRIVING DIGITAL ECONOMY\n</b></div><div>Attorney General of the Federation and Minister of Justice actively participated in the Digital Eco-System Steering Committee to bring about a new Data Management Act for Nigeria. The draft bill is at advanced stages of finalization. Proposed Laws under this category included the Electronic Evidence Act, Digital Data Management Act, Electronic Banking Act, among others.\n</div><div>Efforts have reached advanced stage for Electronic Transactions Act which is the resuscitation of the Electronic Transactions Bill currently in the National Assembly\n</div><div>The year 2020 has come and gone. The Office of the Attorney General of the Federation and Minister of Justice recorded tremendous successes and indelible imprint in the development of the country which many individuals, organizations and institutions appreciated.</div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div><div><b>\n</b></div></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 2\" mbr-class=\"{'last': steps == 3}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">3</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 3\" mbr-class=\"{'last': steps == 4}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">4</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 4\" mbr-class=\"{'last': steps == 5}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">5</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 5\" mbr-class=\"{'last': steps == 6}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">6</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 6\" mbr-class=\"{'last': steps == 7}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">7</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 7\" mbr-class=\"{'last': steps == 8}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">8</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 8\" mbr-class=\"{'last': steps == 9}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">9</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 9\" mbr-class=\"{'last': steps == 10}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">10</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZadZMQIIN",
+          "_anchor": "numbers01-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    },
+    "malami-political.html": {
+      "settings": {
+        "title": "malami-political",
+        "order": 4
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#36187d"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#0196e3"
+            },
+            ".mbr-text": {
+              "color": "#36187d"
+            },
+            ".title-col": {
+              "border-right": "3px solid currentColor",
+              "color": "#0196e3",
+              "margin-right": "3rem",
+              "align-items": "center",
+              "display": "inline-flex",
+              "width": "100%",
+              "@media (max-width: 992px)": {
+                "margin-right": "0",
+                "border-right": "0"
+              }
+            },
+            ".text-col": {
+              "align-items": "center",
+              "display": "flex"
+            },
+            ".mbr-section-subtitle, .title-col": {
+              "width": "100%"
+            }
+          },
+          "_name": "header01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"headers1\" group=\"Header\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f2f3f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h5 class=\"mbr-section-title align-left mbr-fonts-style mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\"><b>CONTRIBUTION TO DEMOCRACY IN NIGERIA</b></h5>\n            </div>\n            <div class=\"col-12 col-md-12 col-lg-4 title-col\" mbr-if=\"showSubtitle\">\n                <h6 class=\"mbr-section-subtitle align-left mbr-fonts-style my-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .title-col\" mbr-theme-style=\"display-5\"><b>\n                        SECUREM4</b></h6>\n            </div>\n            <div class=\"col-12 col-md-12 text-col col-lg-7\">\n                <p class=\"mbr-text align-left mbr-fonts-style mb-0\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Malami is a politician and democrat portraying his strives as a politician in participation party politics serving through the ranks to the level of a national legal adviser, formation of the APC, participating in NEC/solving the party crisis.\n<br>\n<br>This can be seen in his effort to establish Local Government autonomy/judiciary autonomy, following the passage of the EO10 and liaising with the Governor’s forum, and finally moving the supreme court to act on the same.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZggXGARQ9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header01-4"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            ".mbr-section-subtitle": {
+              "color": "#36187d"
+            },
+            ".mbr-text": {
+              "color": "#6c758f"
+            }
+          },
+          "_name": "article01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"article1\" group=\"Article\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f2f3f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 align-left col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>POLITICAL LANDSCAPE</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-4\">Mr Malami, SAN, has long association with the political developments of the country. He served as a member of the Constitution Sub – Committee for All Progressives Congress (APC) 6th June 2014. He was Chairman, All Progressives Congress (APC) Kano State Congress Appeal Committee 15th May 2014. He also served as a member of the Kebbi State Committee on National Conference Convened by the Federal Government in 2013.\n<br>\n<br>Another political assignment saw him serve as the member of the APC Electoral Committee for Anambra State Gubernatorial Election in 2013, as well as a member, National Convention and Congress Committee in 2013. This is in addition to being a member of the Merger Committees between the CPC, CAN &amp; ANPP which led to the formation of the All Progressive Congress (APC) in 2013.\n<br>\n<br>Prior to the formation of the APC, Mr Malami, SAN had served as the National Legal Adviser of the Congress for Progressive Change (CPC) 2011-2013; Chairman of the Legal Team of the CPC Presidential Campaign Organization, 2011; Member of the Kano State Local Government Election Tribunal in 2004; Resource Person on the Manifesto drafting Sub-Committee of Inter Joint Party; and also member of the PDP Legal Team for Election Petition in 2003.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZggZwwXAS",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "article01-5"
+        }
+      ]
+    },
+    "malami-philantrophy.html": {
+      "settings": {
+        "title": "malam-philantrophy",
+        "order": 5
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "& when (@reverseContent)": {
+              ".row": {
+                "flex-direction": "row-reverse"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#36187d"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#0196e3"
+            },
+            ".mbr-text": {
+              "color": "#36187d"
+            },
+            ".title-col": {
+              "border-right": "3px solid currentColor",
+              "color": "#0196e3",
+              "margin-right": "3rem",
+              "align-items": "center",
+              "display": "inline-flex",
+              "width": "100%",
+              "@media (max-width: 992px)": {
+                "margin-right": "0",
+                "border-right": "0"
+              }
+            },
+            ".text-col": {
+              "align-items": "center",
+              "display": "flex"
+            },
+            ".mbr-section-subtitle, .title-col": {
+              "width": "100%"
+            }
+          },
+          "_name": "header01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"headers1\" group=\"Header\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" name=\"reverseContent\" title=\"Reverse\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#f2f3f7\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\">\n                <h5 class=\"mbr-section-title align-left mbr-fonts-style mb-3\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-5\"><b>PHILANTHROPIC ACTIVITIES/ACHIEVEMENTS</b></h5>\n            </div>\n            <div class=\"col-12 col-md-12 col-lg-4 title-col\" mbr-if=\"showSubtitle\">\n                <h6 class=\"mbr-section-subtitle align-left mbr-fonts-style my-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .title-col\" mbr-theme-style=\"display-1\"><b>\n                        .</b></h6>\n            </div>\n            <div class=\"col-12 col-md-12 text-col col-lg-7\">\n                <p class=\"mbr-text align-left mbr-fonts-style mb-0\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\"><br>Nigeria’ North West is key to the improvement of the country’s development situation and attainment of sustainable development goals. The northwest has a population of more at least 50 million people and two-third of them are living in abject poverty and facing other challenges such as out-of-school children and limited access to quality education among others.\n<br>\n<br>Sequel to the above prevailing circumstances, four (4) Non-Governmental organizations founded by one man and his two wives, Abubakar Malami, SAN, are working assiduously to ensure that happens.\n<br>\n<br>Khadimiyya for Justice and Development Initiative\n<br>Kadi Malami Foundation\n<br>Aisha Abubakar Malami Center for Women Development (AAMCWD)\n<br>Al-Iman Charity Foundation\n<br>Including many of the Malami’s Support organizations.<br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZghDN5Gqu",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header01-6"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".item": {
+              "position": "relative",
+              "display": "flex",
+              "padding-bottom": "2rem",
+              "&:last-child": {
+                ".icon-box": {
+                  "&:before": {
+                    "display": "none"
+                  }
+                }
+              },
+              "& when not (@showArrows)": {
+                "align-items": "flex-start"
+              },
+              "& when (@showArrows)": {
+                "&::before": {
+                  "content": "\"\"",
+                  "width": "2px",
+                  "height": "100%",
+                  "left": "40px",
+                  "position": "absolute",
+                  "top": "0",
+                  "background": "@lineColor",
+                  "transform": "translate(-50%, 0)",
+                  "@media (max-width: 767px)": {}
+                }
+              }
+            },
+            ".last": {
+              "&:before": {
+                "display": "none"
+              }
+            },
+            ".icon-box": {
+              "width": "80px",
+              "min-width": "80px",
+              "height": "80px",
+              "border-radius": "50%",
+              "background": "@stepColor",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "margin-right": "2rem",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "position": "relative",
+              "@media (max-width: 768px)": {
+                "margin-right": "1rem"
+              }
+            },
+            "span": {
+              "font-size": "2rem",
+              "@media (max-width: 991px)": {
+                ".card": {
+                  "margin-bottom": "2rem"
+                },
+                ".card-wrapper": {
+                  "margin-bottom": "2rem"
+                },
+                ".icon-box": {
+                  "& when (@showArrows)": {
+                    "&::before": {
+                      "top": "141%",
+                      "& when (@fullWidth)": {
+                        "top": "123%"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".icon-box": {
+                "& when (@showArrows)": {
+                  "&::before": {
+                    "top": "114%"
+                  }
+                }
+              }
+            },
+            "SPAN": {
+              "color": "#36187d"
+            },
+            ".icon-text": {
+              "color": "#6c758f"
+            },
+            ".icon-title": {
+              "color": "#36187d"
+            },
+            ".icon-subtitle": {
+              "color": "#36187d"
+            },
+            ".main-title": {
+              "color": "#36187d"
+            }
+          },
+          "_name": "numbers01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"numbers1\" group=\"Numbers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\" plugins=\"mobirise-icons2\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"7\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Steps\" name=\"steps\">\n            <option value=\"1\" selected>1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Step</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showCardTitle\">\n        <input type=\"checkbox\" title=\"Sub Title\" name=\"showCardsubTitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showCardText\" checked>\n        <input type=\"color\" name=\"stepColor\" title=\"Step Color\" value=\"#f2f3f7\">\n        <input type=\"checkbox\" title=\"Line\" name=\"showArrows\" checked>\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#dae2ec\" condition=\"showArrows\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\" mbr-if=\"showTitle || showText || showButton\">\n                <div class=\"card-wrapper pb-4\">\n                    <div class=\"card-box align-left\">\n                        <h4 class=\"main-title mbr-fonts-style mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".main-title\"><b>ACTIVITIES/ACHIEVEMENTS</b></h4>\n                        <p class=\"mbr-text mbr-fonts-style mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">\n                            Mobirise is a free offline app for Windows and Mac to easily create small/medium websites,\n                            landing pages, online resumes and portfolios. 2500+ beautiful website blocks, templates and\n                            themes help you to start easily.</p>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <div class=\"item mbr-flex\" mbr-class=\"{'last': steps == 1}\">\n                    <div class=\"icon-box\">\n                        <span mbr-text class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">*</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2019</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>Smart Home Security</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>1. BOREHOLES AND CBN PARTNERSHIP\n</b><div><b>Boreholes: A total of 128 boreholes were constructed in Kebbi State. (84 completed and 44 allocated on the way) in all LGAs of Kebbi state\n</b></div><div><b>CBN Rice Anchor borrower progamme in 16 Local Governments involving 1702 farmers including 120 women at a Total sum of 270 Million Naira.\n</b></div><div><b>CBN Cassava anchor borrower programme involving Four Hundred and Ninety Six of the Farmers including 75 women. Each Farmer received the sum ofN86,000 in addition to 4 bags of fertilizers, seeds, pesticides and herbicides. A total sum of Eighty Five Million Nine Hundred and Fifty Six Thousand Naira only was spent on the programme.</b></div><br><div><b>2. HEALTHCARE AND RELIEF\n</b></div><div><b>2020 Wet season: Last year (2021) 2437 farmers including 429 women were validated by the CBN and each farmer received a sum of N 211,850.00 which also includes agric inputs. The sum of Five Hundred and Sixteen Million Two Hundred and Seventy-Eight Four Hundred and Fifty Naira only was spent.\n</b></div><div><b>Healthcare to at least 1000 members of Nasarawa Ward under the community health insurance programme, each member is entitled to access free health care service for up to 10 family members\n</b></div><div><b>6. Distributed relief materials to 1,800 Internally displaced persons (IDPs)in Danko/Wasagu, Maiyama, and Birnin Kebbi Local Governments Areas of Kebbi State.\n</b></div><div><b><br></b></div><br><div><b>3. RICE AND COLLABORATIONS\n</b></div><div><b>In collaboration with Sir Emeka Offor Foundation donated 3000 bags of rice to the people and Government of Kebbi State.&nbsp;</b><b style=\"font-size: 1.2rem;\">Khadimyya also provided support to flood victims in; Argungu, Augie, Arewa, Birnin Kebbi , Bunza, Suru, Bagudo, Koko Besse, Aliero, Jega, Dandi, Shanga, Yauri and Ngaski</b></div><div><b>Khadimyya in collaboration with the with the NATIONAL AGRICULTURAL LAND DEVELOPMENT AUTHORITY (NALDA) distributed 600 goats to 225 women and donated startup capital to 100 women.\n</b></div><div><b><br></b></div><br><div><b>4. RAMADAN GIFTS, TRAINING AND OTHERS\n</b></div><div><b>Khadimiyya also provided Ramadan and Sallah support to at least 12600 Bags of Rice, 3000 Bags of Millet, 3000 Bags of Maize, 3000 Bags of Guinean corn, 150 Bundles of Attampa, 100 Bundles of Shadda, 7,000 Bundles of Silifas\n</b></div><div><b>Khadimiyya for Justice and Development Initiative (KDI) also organized a five-day training workshop for over five hundred potentials entrepreneurs in Kebbi State. About 500 entrepreneurs drawn from all 21 Local Government Areas of Kebbi State participated in the capacity building program to enable them benefit from the CBN’s AGSMEIS package to promote their entrepreneurial skills.\n</b></div><div><b>Kadi Malami Foundation supports 21 “Almajiri” feeding centers in Kebbi State on a weekly basis”. The foundation also provides direct feeding to 11 different centers across Birnin Kebbi. The total numbers of the feeding beneficiaries are put at 20,400\n</b></div><div><b>The Kadi Foundation has also constructed or renovated 41 Islamic schools and 16 Jumat mosques around Kebbi State as at date.\n</b></div><div><b><br></b></div><br><div><b>5. MARRIAGES, MAINTENANCE, RELIGIOUS AND OTHERS\n</b></div><div><b>The Kadi Malami Foundation spent a total of 71,308,880 amounts on health, marriages, maintenance, religious and others to 312 people since inception.\n</b></div><div><b>Also food items such as Bags of Rice, Beans, Millet, Palm oils, Groundnut oil in jerry cans, and other essential commodities like, Bags of Omo, Pampers, Eggs, Sweats, Biscuits, Bags of Sugar, Clothes, Washing- machines etc. and cash donation are provided each and every month. These items costs the Foundation the sum of N895, 640.00 each month.\n</b></div><div><b>Again during Ramadan period, Kadi Malami Foundation disbursed at least and other essentials commodities such as: Milk, Macaroni, Spaghetti e.t.c\n</b></div><div><b><br></b></div><br><div><b>6. WOMEN EMPOWERMENT WITH SUNDRY APPOINTMENTS\n</b></div><div><b>Hajiya Aisha Malami had provided 25 water boreholes each with a generator. It has also renovated and repairs many. The feeding of the needy and provision of child care supplies such as pampers and clothing is a regular activity of the Hajiya Aisha Foundation.\n</b></div><div><b>The Al Iman Charity Foundation organized sensitization workshop/ motivation talk on self-development and importance of learning a trade. It has also provided training on Catering, cosmetics and tailoring as well as bead making with computer appreciation for 2900 women and youth-comprising 2000 women and 900 youth.\n</b></div><div><b>As Attorney General and Minister of Justice Abubakar Malami has helped over 408 persons secure employment with various organizations.\n</b></div><div><b>There are also about 100 tube wells provided by the Sokoto River-Basin Development Authority through the influence of the Minister of Justice. The tube wells are a source of water for irrigation and located in the Fadama areas of Gwandu, Argungu and Birnin Kebbi.\n</b></div><div><b><br></b></div><br><div><b>7. TOWARDS ENDING POVERTY, HUNGER AND ENSURING FOOD SECURITY\n</b></div><div><b>These activities have immensely contributed to the attainment of ten key areas of the SDGs as enumerated below:\n</b></div><div><b>1. Toward Ending poverty: The organizations goal of contributing to reducing poverty and hunger is done by providing income to households through its rice anchor borrower programme and the Casava programme. At least 1702 farmers benefited in the rice project and at least 2901 benefited from two cassava projects with all beneficiaries using the proceeds to provide sustenance, school fees and other needs of their families and thereby contributing to the reduction of poverty.\n</b></div><div><b>2. Ending hunger and ensuring food security with sustainable agriculture: The four organizations under the umbrella of Abubakar Malami have also contributed to ending hunger and ensuring sustainable agriculture by producing at least 100 tonnes of food commodities in its rice and cassava programmes. These have added to outputs of Kebbi state despite the flood experienced last year. With increased production of food the number of undernourished people has dropped in Kebbi state. Also the feeding programme under the Kadi Malami Foundation provides nutritious meals to 21 Islamic schools weekly thereby adding to the reduction of hunger and undernourishment.\n</b></div><div><b><br></b></div><br><div><b>8. ENSURING HEALTHY LIVING FOR ALL AGES, ENSURING INCLUSIVE, EQUITABLE AND QUALITY EDUCATION; ACHIEVE GENDER EQUALITY AND EMPOWER ALL WOMEN AND GIRLS\n</b></div><div><b>Ensuring healthy living for all ages: Still, the four organizations, in particular, Khadimaya runs a community health programme that provides access to professional health care to 1000 members of Nassarawa Ward A of Birnin Kebbi Local Government. The programme coordinated by Hussein Abdullahi has continued to ensure healthy living for the 1000 members of Nasarawa ward and their families. There is now a plan to expand the arrangement to at least one ward of each Local Government in Kebbi State.\n</b></div><div><b>Ensure inclusive, equitable and quality education: All four organizations have contributed to quality education more particularly the Kadi Malami Foundation which sponsors secondary and tertiary education. It had also provided support to educational pursuits through feeding of Islamic students.\n</b></div><div><b>Achieve gender equality and empower all women and girls: Under two organizations, the Hajiya Aisha Women and Children Foundation and Al-Iman Charity Foundation the Abubakar Malami organizations have contributed immensely to women empowerment and gender equality. They have each trained more than 3000 women in various trades such as catering, cosmetic and tailoring and others. These have given them the valuable skills to earn a living and contribute to the provision of food and other needs for their respective families.\n</b></div><div><b><br></b></div><br><div><b>9. ENSURE EFFICIENCY IN WATER SUPPLY AND SANITATION &amp; OTHERS\n</b></div><div><b>Ensure efficiency in water supply and sanitation: All the four organizations under the umbrella of Abubakar Malami are in the vital sector of provision of clean water and sanitation. All together they have helped sink 128 water Boreholes alongside electric generators. These have provided much-needed drinking water and improving access to clean water for drinking, hand washing and other household chores. The water programme has touched the lives of at least 60,000 households at 150 people to one borehole.\n</b></div><div><b>The activities of the four organizations under the umbrella of Abubakar Malami have also intermittently covered the following three SDG areas; Partnership by partnering with the CBN on rice and cassava programmes and similarly partnering with NALDA on goat rearing. The organizations also ensure the reduction of inequalities in income by improving people’ ability to meet their needs. It also takes action on combating climate change through speak up about its effects and reducing water waste.</b></div></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 1\" mbr-class=\"{'last': steps == 2}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">2</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2020</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>Cyber Security</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 2\" mbr-class=\"{'last': steps == 3}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">3</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 3\" mbr-class=\"{'last': steps == 4}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">4</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 4\" mbr-class=\"{'last': steps == 5}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">5</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 5\" mbr-class=\"{'last': steps == 6}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">6</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 6\" mbr-class=\"{'last': steps == 7}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">7</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 7\" mbr-class=\"{'last': steps == 8}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">8</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 8\" mbr-class=\"{'last': steps == 9}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">9</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n                <div class=\"item mbr-flex\" mbr-if=\"steps > 9\" mbr-class=\"{'last': steps == 10}\">\n                    <div class=\"icon-box\">\n                        <span class=\"step-number mbr-fonts-style\" mbr-theme-style=\"display-5\">10</span>\n                    </div>\n                    <div class=\"text-box\" mbr-if=\"showCardTitle || showCardText || showCardsubTitle\">\n                        <h4 class=\"icon-subtitle card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-2\" data-app-selector=\".icon-subtitle\" mbr-if=\"showCardsubTitle\"><b>2021</b></h4>\n\n                        <h4 class=\"icon-title card-title mbr-black mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".icon-title\" mbr-if=\"showCardTitle\"><b>CCTV Cameras</b></h4>\n                        <h5 class=\"icon-text mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".icon-text\" mbr-if=\"showCardText\"><b>Lorem ipsum dolor sit amet,\n                                consectetur adipiscing elit. Phasellus cursus, lacus at fringilla lacinia, leo leo\n                                eleifend tortor, quis sollicitudin mauris ipsum a elit. Duis eget tincidunt dui, non\n                                auctor mauris.</b></h5>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sZghGNBR0n",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "numbers01-7"
+        }
+      ]
+    },
+    "malami.html": {
+      "settings": {
+        "title": "Achievements | Abubakar Malami SAN",
+        "order": 1,
+        "main": false
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "border-radius": "3rem"
+            }
+          },
+          "_name": "image01",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"image1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/undraw-stepping-up-g6oo-890x676.png\" alt=\"Mobirise\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Achievement</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "szQvU9MzqO",
+          "_anchor": "image01-j",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".title": {
+              "padding": "0 2rem",
+              "color": "#36187d"
+            },
+            ".card-title": {
+              "max-width": "600px",
+              "color": "#000000"
+            },
+            ".card-wrapper": {
+              "overflow": "visible",
+              "display": "flex",
+              "padding": "3rem 4rem",
+              "border-radius": "3rem",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "margin-bottom": "4rem",
+              "@media (max-width: 767px)": {
+                "flex-direction": "column",
+                "padding": "2rem"
+              }
+            },
+            ".mbr-iconfont": {
+              "font-size": "2.5rem",
+              "color": "@iconColor",
+              "padding": "2rem",
+              "padding-top": "2.2rem",
+              "cursor": "pointer",
+              "box-shadow": "0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "&:hover": {
+                "background": "@iconColor2"
+              }
+            },
+            "img": {
+              "width": "150px",
+              "background": "white",
+              "height": "150px",
+              "border-radius": "50%",
+              "padding": "1rem",
+              "object-fit": "contain",
+              "margin": "auto"
+            },
+            ".card-box": {
+              "margin": "auto",
+              "@media (max-width: 767px)": {
+                "text-align": "center",
+                "padding-top": "2rem",
+                "padding-bottom": "2rem"
+              }
+            },
+            "@media (max-width: 992px)": {
+              ".mt-5": {
+                "margin-top": "0.5rem!important"
+              }
+            },
+            ".card-text": {
+              "color": "#0196e3"
+            }
+          },
+          "_name": "clients02",
+          "_sourceTheme": "securem4",
+          "_customHTML": "<section class=\"clients2\" group=\"People\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Main Title\" name=\"showmainTitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Color\" name=\"iconColor\" value=\"#000000\" selected condition=\"showIcon\">\n        <input type=\"color\" title=\"Hover\" name=\"iconColor2\" value=\"#f8f9fb\" selected>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#f2f3f7\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12\">\n                <h2 class=\"title align-left mbr-fonts-style mb-5\" mbr-theme-style=\"display-2\" mbr-if=\"showmainTitle\" data-app-selector=\".title\"><b>Our Company</b></h2>\n\n            </div>\n            <div class=\"card col-12 col-md-12 col-lg-12\" mbr-if=\"cardsAmount > 0\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"malami-official.html\" class=\"text-black text-primary\">Official</a></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\"><a href=\"#\" class=\"text-success\"><b>yoursite.com</b></a></h5>\n                    </div>\n\n                    <a href=\"malami-official.html\"><span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-edit mobi-mbri\" mbr-if=\"showIcon\"></span></a>\n\n\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-12 col-lg-12\" mbr-if=\"cardsAmount > 1\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><a href=\"malami-political.html\" class=\"text-black\">Socio-Political</a></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\"><a href=\"#\" class=\"text-success\"><b>yoursite.com</b></a></h5>\n                    </div>\n                    <a href=\"malami-political.html\"><span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-star mobi-mbri\" mbr-if=\"showIcon\"></span></a>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-12 col-lg-12\" mbr-if=\"cardsAmount > 2\">\n                <div class=\"card-wrapper\">\n\n                    <div class=\"card-box\">\n                        <h4 class=\"card-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><u><a href=\"malami-philantrophy.html\" class=\"text-primary\">Philanthropy</a></u><br></h4>\n                        <h5 class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\"><a href=\"#\" class=\"text-success\"><b>yoursite.com</b></a></h5>\n                    </div>\n                    <a href=\"malami-philantrophy.html\"><span mbr-icon class=\"mbr-iconfont m-auto mobi-mbri-users mobi-mbri\" mbr-if=\"showIcon\"></span></a>\n                </div>\n            </div>\n\n\n        </div>\n    </div>\n</section>",
+          "_cid": "szQvR6NR5i",
+          "_anchor": "clients02-i",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
